@@ -1,197 +1,350 @@
+/* Ahmet */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+  /* Ahmet*/
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+/* Ahmet */
+a {
+  text-decoration: none;
+}
+
+/* Ahmet */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Ahmet */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Ahmet */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ahmet */
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Ahmet */
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
 }
 
 .nav-logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-    text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  margin-right: 76px; /* Ahmet*/
 }
 
 .nav-logo .logo-span {
-    color: #2e2f42;
-    text-decoration: none;
+  color: #2e2f42;
+  text-decoration: none; /* ???*/
 }
 
-.nav-list__list-item .link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+.header {
+  /* Ahmet*/
+  border-bottom: 1px solid #e7e9fc;
+  height: 72px;
+  /* height: 100vh; */
 }
 
-.nav-list__list-item .link:hover,
-.nav-list__list-item .link:focus {
-    color: #404bbf;
+/* Ahmet*/
+.header-contain {
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  /* Ahmet*/
+  display: flex;
+  /* flex-direction: row;  ????????*/
+  gap: 40px;
+}
+
+.nav-list .list:last-child {
+  margin-right: 0;
+}
+
+.nav-list .list .link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding: 24px 0;
+}
+
+.nav-list .list .link:hover,
+.nav-list .list .link:focus {
+  color: #404bbf;
 }
 
 .nav-list__list-item {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .contact {
-    font-style: normal;
+  font-style: normal;
 }
 
-.contact .link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+.contact .contact-link {
+  /* Ahmet */
+  display: flex;
+  /* flex-direction: row; ????????*/
 }
 
-.contact ul li{
-    list-style-type: none;
+.contact-link .list {
+  margin-right: 40px;
 }
 
-.link {
-    text-decoration: none;
+.contact-link .list:last-child {
+  margin-right: 0;
 }
 
-.contact .link:hover,
-.contact .link:focus {
-    color: #404bbf;
+.contact-link .list .link {
+  color: #434455;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
 }
 
-.first-section {
-    background-color: #2e2f42;
+.contact-link .list .link:hover,
+.contact-link .list .link:focus {
+  color: #404bbf;
 }
 
-.first-section__title {
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
+/* Ahmet */
+.first-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .first-section__btn {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    color: #ffffff;
-    background-color: #4D5AE5;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  /* Ahmet */
+  min-width: 169px;
+  display: block;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .first-section__btn:hover,
 .first-section__btn:focus {
-    background-color: #404BBF;
-}
-
-.second-section__list-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-}
-
-.second-section ul li{
-    list-style-type: none;
-}
-
-.second-section .text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+  background-color: #404bbf;
+  color: #ffffff;
 }
 
 .third-section {
-    background-color: #f4f4fd;
+  background-color: #f4f4fd;
+  /* Ahmet */
+  padding: 120px 0;
 }
 
-.third-section__title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
+.bolbas {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
 }
 
-.third-section__list .list-item {
-    background-color: #ffffff;
+.first-section {
+  background-color: #2e2f42;
+  padding: 188px 0;
 }
 
-.third-section__list .member-name {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+.first-section__title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  max-width: 496px;
+  /* Ahmet
+  width: 496px;
+  /* height: 120px; */
+  /* margin-top: 260px;
+  margin-left: 472px;
+  align-items: center; */
 }
 
-.third-section__list .text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+.second-section {
+  background-color: #ffffff;
+  padding: 120px 0;
 }
 
-.third-section ul li {
-    list-style-type: none;
+.random {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.forth-section__title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2E2F42;
+.section__itemize {
+  display: flex;
+  gap: 24px;
 }
 
-.forth-section ul li {
-    list-style-type: none;
+.section__itemize .list .third-section__list {
+  width: calc((100% - 48px) / 4);
 }
 
-.list-item__title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+.dort {
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
-.list-item .text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+.section__itemize .dort .list.son {
+  margin-bottom: 48px;
+  width: calc((100% - 48px) / 3);
+}
+
+.son.son:nth-child(3n) {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.section__itemize .list:last-child {
+  margin-right: 0;
+}
+
+.section__itemize .list {
+  background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.section__itemize .list .second-section__list {
+  width: calc((100% - 72px) / 4);
+}
+
+.check {
+  padding: 32px 0;
+}
+
+.check-wrapped {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.section__itemize .list .huc {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.section__itemize .list .text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-align: center;
+}
+
+.forth-section {
+  background-color: #ffffff;
+  padding: 120px 0;
 }
 
 .footer {
-    background-color: #2e2f42;
+  background-color: #2e2f42;
+  /* Ahmet */
+  padding: 100px 0;
 }
 
 .footer .text {
-    color: #F4F4FD;
-    letter-spacing: 0.02em;
-    line-height: 1.5;
+  color: #f4f4fd;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  font-size: 16px;
+  /* Ahmet */
+  max-width: 264px;
 }
 
 .footer-logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-    text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  /* Ahmet */
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.logo-span {
+  color: #f4f4fd;
+  display: inline-block;
 }
 
 .footer-logo .logo-span {
-    color: #f4f4fd;
-    text-decoration: none;
+  color: #f4f4fd;
+  text-decoration: none;
 }
